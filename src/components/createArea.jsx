@@ -35,7 +35,7 @@ function CreateArea(props) {
         {isExpanded && (<input onChange={handleChange}  value={note.title} name="title" placeholder="Title" />)}
 
         <textarea onChange={handleChange} onClick={expand} value={note.content} name="content" placeholder="Take a note..." rows={isExpanded ? 3 : 1} />
-        <zoom in = {isExpanded}><Fab onClick={handleClick}><AddIcon /></Fab></zoom>
+        <Zoom in = {isExpanded}><Fab onClick={handleClick}><AddIcon /></Fab></Zoom>
       </form>
     </div>
   );
